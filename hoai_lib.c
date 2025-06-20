@@ -21,7 +21,7 @@
  * [6]: Honorarzone V - max fee
  */
 static const int hoai_fee_table[HOAI_COST_BRACKETS][HOAI_FEE_COLUMNS] = {
-    // Kosten, HZ I min, HZ I max/HZ II min, HZ II max/HZ III min, HZ III max/HZ IV min, HZ IV max/HZ V min, HZ V max
+    // Kosten, HZ I min, HZ I max, HZ II max, HZ III max,HZ IV max, HZ V max
     {   25000,     3120,     3657,      4339,      5412,      6094,     6631},
     {   35000,     4217,     4942,      5865,      7315,      8237,     8962},
     {   50000,     5804,     6801,      8071,     10066,     11336,    12333},
@@ -57,7 +57,7 @@ static double linear_interpolate_value(double x_target, double x1, double y1, do
     return y1 + (y2 - y1) * (x_target - x1) / (x2 - x1);
 }
 
-FeeRange calculate_fee_range(int anrechenbare_kosten, int honorarzone) {
+FeeRange calculate_fee_range_35(int anrechenbare_kosten, int honorarzone) {
     FeeRange result = {-1, -1}; // Default error return
 
     // Validate Anrechenbare Kosten: must be within the table's defined range

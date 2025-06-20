@@ -21,7 +21,7 @@ int main() {
             int kosten = test_kosten[i];
             int zone = test_zonen[k];
             // Call the function from our library
-            FeeRange fr = calculate_fee_range(kosten, zone);
+            FeeRange fr = calculate_fee_range_35(kosten, zone);
             if (fr.low != -1 || fr.max != -1) { // Check if not an error return - use ' for thousand separators
                 printf("%'-14d | %-2d | %'-10d | %'-10d\n", kosten, zone, fr.low, fr.max);
             }

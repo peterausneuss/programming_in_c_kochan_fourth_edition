@@ -15,6 +15,6 @@ typedef struct {
  * @param honorarzone The fee zone (1-5).
  * @return FeeRange struct with low and max fee. Returns {-1, -1} on error (e.g., invalid honorarzone or costs out of range).
  */
-FeeRange calculate_fee_range(int anrechenbare_kosten, int honorarzone);
+FeeRange calculate_fee_range_35(int anrechenbare_kosten, int honorarzone);
 
 #endif // HOAI_LIB_H
