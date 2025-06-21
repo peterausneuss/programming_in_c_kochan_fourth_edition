@@ -1,0 +1,3 @@
+/home/piet/c/programming_in_c_kochan_fourth_edition/build/CMakeFiles/start_cmake.dir
+/home/piet/c/programming_in_c_kochan_fourth_edition/build/CMakeFiles/edit_cache.dir
+/home/piet/c/programming_in_c_kochan_fourth_edition/build/CMakeFiles/rebuild_cache.dir

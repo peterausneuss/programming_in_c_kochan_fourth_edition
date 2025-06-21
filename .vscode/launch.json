@@ -2,10 +2,36 @@
     "configurations": [
         
         {
-            "name": "C/C++: gcc build and debug active file",
+            "name": "hoai app",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/hoai_app",
+            "program": "${workspaceFolder}/array/hoai_app",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/array/",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "hoai app",
+            "miDebuggerPath": "/usr/bin/gdb"
+        },
+        {
+            "name": "C/C++: gcc build and debug single active file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}", // Points to the output of the new task
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
@@ -24,7 +50,7 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "C/C++: gcc build active file",
+            "preLaunchTask": "C/C++: gcc build active file", // Use the enhanced default task
             "miDebuggerPath": "/usr/bin/gdb"
         }
     ],

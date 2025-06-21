@@ -1,0 +1,1 @@
+/usr/bin/cc -g -Wl,--dependency-file=CMakeFiles/start_cmake.dir/link.d CMakeFiles/start_cmake.dir/main.c.o -o start_cmake

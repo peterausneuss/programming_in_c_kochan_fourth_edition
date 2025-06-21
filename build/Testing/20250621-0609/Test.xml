@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Linux-cc"
+	BuildStamp="20250621-0609-Experimental"
+	Name="cubi"
+	Generator="ctest-3.31.6"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="Linux"
+	Hostname="cubi"
+	OSRelease="6.14.0-22-generic"
+	OSVersion="#22-Ubuntu SMP PREEMPT_DYNAMIC Wed May 21 15:01:51 UTC 2025"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="190"
+	ModelName="Intel(R) N100"
+	ProcessorCacheSize="6144"
+	NumberOfLogicalCPU="4"
+	NumberOfPhysicalCPU="4"
+	TotalVirtualMemory="0"
+	TotalPhysicalMemory="3374"
+	LogicalProcessorsPerPhysical="1"
+	ProcessorClockFrequency="2560.95"
+	>
+	<Testing>
+		<StartDateTime>Jun 21 08:53 CEST</StartDateTime>
+		<StartTestTime>1750488818</StartTestTime>
+		<TestList/>
+		<EndDateTime>Jun 21 08:53 CEST</EndDateTime>
+		<EndTestTime>1750488818</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

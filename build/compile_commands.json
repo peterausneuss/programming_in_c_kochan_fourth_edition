@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/piet/c/programming_in_c_kochan_fourth_edition/build",
+  "command": "/usr/bin/cc   -g -o CMakeFiles/start_cmake.dir/main.c.o -c /home/piet/c/programming_in_c_kochan_fourth_edition/main.c",
+  "file": "/home/piet/c/programming_in_c_kochan_fourth_edition/main.c",
+  "output": "CMakeFiles/start_cmake.dir/main.c.o"
+}
+]

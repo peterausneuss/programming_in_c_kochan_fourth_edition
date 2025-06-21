@@ -9,7 +9,7 @@ scanf("%i", &input_int);
 
 
 printf("\ni\t-.2f\t\t.2f\t\t-i\t\td\n");
-for (int i = input_int; i <= 10; i++)
+for (int i = input_int; i <= input_int+310; i++)
 {
     t_int = i*1000;
     t_float = i*2.33333333333333333333;
