@@ -12,6 +12,14 @@
                 "CMAKE_CXX_COMPILER": "/usr/bin/g++",
                 "CMAKE_BUILD_TYPE": "Debug"
             }
+        },
+        {
+            "name": "lib",
+            "description": "",
+            "displayName": "",
+            "inherits": [
+                "single_file"
+            ]
         }
     ]
 }

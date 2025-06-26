@@ -1,4 +1,7 @@
 /*
+branch : function with global variables
+
+
 converting postive Integer to another base 16:hex and 2:bin 
 Date: 21. Juni 2025
     using arrays
@@ -7,23 +10,40 @@ Date: 21. Juni 2025
 */
 #include <stdio.h>
 #include <stdlib.h>
-
-
-int main(int argc, char const *argv[])
-{
 const char baseDigits[16] ={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
 int convertedNumber_16[64];
 int convertedNumber_2[64];
 long int numberToConvert, copyNumberToConvert;
 int nextDigit, base, index_16, index_2 = 0;
 
+void get_number(void)
+{
+    // get the number to convert
+    printf("Enter a decimal number: ");
+    scanf("%ld", &numberToConvert);
+    copyNumberToConvert = numberToConvert;
+}
+
+void convert_number_16(void)
+{
+    do
+    {
+
+        convertedNumber_16[index_16] = numberToConvert % 16;
+        numberToConvert /= 16;
+        index_16++;
+
+    } while (numberToConvert != 0);55
+}
+
+int main(int argc, char const *argv[])
+{
+
+
 // check if a number is present 
 if (argc != 2)
 {
-// get the number to convert
-printf("Enter a decimal number: ");
-scanf("%ld", &numberToConvert);
-copyNumberToConvert = numberToConvert;
+get_number();
 }
 else
 {
@@ -38,13 +58,9 @@ if (numberToConvert>=0)
 {
 
 // convert number to base 16
+convert_number_16();
 
-do{
-convertedNumber_16[index_16] = numberToConvert % 16;
-numberToConvert /= 16;
-index_16++;
-} while (numberToConvert != 0);
-
+// convert number to base 2
 do{
 convertedNumber_2[index_2] = copyNumberToConvert % 2;
 copyNumberToConvert /= 2;
